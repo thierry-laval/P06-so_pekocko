@@ -10,10 +10,12 @@ _`Début de formation le 20/04/2020`_
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
 
 ***
-## 📎 Projet 5 - Création de la partie front-end d’un site e-commerce.
+## 📎 Projet 6 - Construire une API sécurisée pour l'application d'avis gastronomiques So Pekocko.
 ![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo.orinoco.png?raw=true)
 ***
+ A ECRIRE
 
+ 
 Le sujet du projet 5 du parcours Développeur web chez Openclassrooms porte sur la création d’un site e- commerce pour la partie front-end.<br>
 L'objectif étant de créer un premier MVP pour démontrer le fonctionnement des applications à des investisseurs potentiels.
 
