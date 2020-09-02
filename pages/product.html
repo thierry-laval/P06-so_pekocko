@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Developpeur Web: Thierry Laval -->
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Ajouter les balises - Pour le moment je n'ai mis que le minimum-->
+    <meta name="author" content="Thierry Laval" />
+    <meta name="Publisher" content="Thierry Laval" />
+    <meta name='description' content='La page produit' />
+    <link rel="apple-touch-icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>Orinoco - Page produit</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Old+Standard+TT:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../front_js/product.js" defer></script>
+    <script>
+        $(document).ready(function () {
+
+            objectSelected();
+            addtoStorage();
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="../index.html"><img src="../images/logo_orinoco.png" class="img-fluid" alt="Logo du site" /></a>
+        </h1>
+    </header>
+    <nav class="navtop">
+        <a href="../index.html" class="navtop__link">Accueil</a>
+        <a href="./panier.html" class="navtop__link">Panier</a>
+        <a href="" class="navtop__link">Mon compte</a>
+    </nav>
+    <main id="mainbloc">
+        <div class="bloc1">
+            <div class="bloc1__img"></div>
+            <article class="bloc1__text">
+                <h2>Boutique d'ours en peluche</h2>
+                <p>Choisissez votre produit</p>
+            </article>
+        </div>
+        <div class="bloc2">
+            <article class="bloc2__item">
+            </article>
+            <div>
+                <label for="options" class="bloc2__optionslabel">Choisissez votre couleur: </label>
+                <select name="bearcolors" id="options">
+                </select>
+            </div>
+            <div>
+                <label for="productQuantity" class="bloc2__optionslabel">Quantité: </label>
+                <select name="quantchoice" id="productQuantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <button id="addtocart__btn">Ajouter au panier</button>
+            <div id="validate__msg"></div>
+            <a href="../index.html" class="bloc2__back">Poursuivre mes achats</a>
+        </div>
+    </main>
+    <footer id="footer">
+        <nav class="navbot">
+            <a href="./mentions.html" class="navtbot__link">Mentions légales</a>
+            <a href="mailto:contact@orinoco.com" class="navbot__link">Contact</a>
+        </nav>
+
+    </footer>
+
+
+
+</body>
+
+</html>

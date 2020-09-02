@@ -1,0 +1,22 @@
+{
+  "name": "orinoco",
+  "version": "1.0.0",
+  "description": "OpenClassrooms P5",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thierry-laval/orinoco.git"
+  },
+  "author": "Thierry Laval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thierry-laval/orinoco/issues"
+  },
+  "homepage": "https://github.com/thierry-laval/orinoco#readme"
+}

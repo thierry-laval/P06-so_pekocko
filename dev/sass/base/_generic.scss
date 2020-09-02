@@ -1,0 +1,483 @@
+//* généric stylesheet //
+
+/** Font
+font-family: 'Old Standard TT', serif;
+font-family: 'Arimo', sans-serif; **/
+
+/** Meyer's CSS Reset https://meyerweb.com/eric/tools/css/reset **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+    background-color: $color4;
+}
+
+#header {
+
+    width:95vw;
+    height:15vh;
+    margin: auto;
+    background-color: $color1;
+    text-align: center;
+    font-family:'Old Standard TT', serif; 
+    font-size:4em;
+    overflow: hidden;
+    border-bottom: 3px solid $color3;
+    border-left: 3px solid $color3;
+    border-right: 3px solid $color3;
+    border-radius: 0 0 10px 10px;
+    
+
+    h1 {
+
+        padding-top: 0.5em;
+    }
+
+    a {
+        text-decoration: none;
+        color:$color5;   
+    }
+    a:hover,:visited, a:active {
+        color: $color5;
+    }
+}
+
+.navtop {
+    overflow: hidden;
+    border-top: 3px solid $color3;
+    border-left: 3px solid $color3;
+    border-right: 3px solid $color3;
+    border-radius:10px 10px 0 0;
+    width: 95vw;
+    text-align: right;
+    background-color: $color1;
+    font-family: 'Old Standard TT', serif;
+    margin: 1vh auto 0vh auto;
+    padding-top: 1em;
+    padding-bottom:1em;
+    
+
+    &__link {
+
+        text-decoration: none;
+        font-size: 1.4em;
+        margin:0 1em 0 1em ;
+        color: $color5;
+        
+
+    }
+}
+
+
+.bloc1 {
+
+    
+    width:95vw;
+    height: 40vh;
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+    border-left:3px solid $color3;
+    border-right:3px solid $color3;
+    
+    &__img {
+    
+    widows: 50%;
+    height:100%;
+    background-image: url(images/teddybackground.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    }
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 35%;
+        padding-top: 3em;
+        padding-left:1em;
+        font-family:'Old Standard TT', serif;
+        font-size: 0.9em;
+        color: $color5;
+
+        h2 {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            color: $color5;
+        }
+
+        @include responsive("small") {
+            font-size: 1.2em;
+        }
+        @include responsive("medium") {
+            font-size: 1.4em;
+        }
+        @include responsive("large") {
+            font-size: 1.6em;
+        }
+    }
+}
+
+.bloc2 {
+    
+    overflow: hidden;
+    border-bottom: 3px solid $color3;
+    border-left: 3px solid $color3;
+    border-right: 3px solid $color3;
+    border-radius:0 0 10px 10px;
+    width: 95vw;
+    min-height: 20vh;
+    margin:0vh auto 1vh auto;
+    background-color: $color1;
+    text-align: center;
+    padding: 3vh 0vw 3vh 0vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+    h2 {
+        font-family:'Old Standard TT', serif; 
+        font-size: 2.5em;
+        margin: 5vh auto 5vh auto;
+        color: $color5;
+    }
+
+    h3 {
+        font-size: 1.8em;
+        margin: 3vh auto 3vh auto;
+    }
+
+    img {
+        @include border;
+        margin-bottom: 2vh;
+    }
+
+    p {
+        color: $color5;
+        margin-top: 20px;
+    }
+
+    table {
+        width: 95%;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: $color1;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 0.7em;
+        color: $color5;
+        @include responsive("small") {
+            font-size: 1.2em;
+        }
+        @include responsive("medium") {
+            font-size: 1.5em;
+        }
+        
+    }
+    tr {
+        
+        padding: 5px;
+    }
+    th {
+        border: 2px solid $color3;
+        padding: 5px;
+    }
+    
+    td {
+        border: 2px solid $color3;
+        padding: 5px;
+    }
+
+    
+
+    &__item {
+        font-family:'Old Standard TT', serif; 
+        font-size: 1.5em;
+        margin: 5vh auto 5vh auto;
+        width: 80%;
+        color: $color5;
+
+        img {
+            @include border;
+            width:90%;
+            transform: scale(1);
+            transition: transform 600ms ease-in-out;
+
+            @include responsive("small") {
+                width:50%;
+            }
+            @include responsive("medium") {
+                width:40%;
+            }
+            @include responsive("large") {
+                width:30%;
+            }
+            
+        }
+        img:hover {
+            transform: scale(2);
+        }
+        &--price {
+            font-weight: 600;
+            margin: 3vh auto 3vh auto;
+        }
+    }
+    &__optionslabel {
+        font-family:'Old Standard TT', serif; 
+        font-size: 1.5em;
+        color: $color5;
+    }
+
+    &__back {
+        color: $color5;
+    }
+
+    &__mention {
+        color: $color5;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1em;
+        padding: 0vh 15vh 5vmin 15vh;
+    }
+    
+    &__validation {
+        font-family:'Old Standard TT', serif; 
+        font-size: 1.2em;
+        color: $color5;
+               
+        &--orderid {
+            color:$color5;
+           
+        }
+
+        &--totalprice {
+            color: $color5;
+            
+        }
+
+    }
+}
+
+#contactbloc {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    width: 60%;
+    margin: auto;
+    color: $color5;
+}
+.identityBloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+
+    &__legend {
+        font-weight: bold;
+        color: $color3;
+    }
+}
+
+.addressBloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    &__legend {
+        font-weight: bold;
+        color: $color3;
+    }
+}
+
+input {
+    margin: auto;
+}
+
+#substract_button {
+    margin-right: 5px;
+}
+#add_button {
+    margin-left: 5px;
+}
+
+#validate__msg {
+    font-family:'Old Standard TT', serif; 
+    font-size: 1.2em;
+    color: $color5;
+    
+
+}
+
+#empty__cart {
+    font-family:'Old Standard TT', serif; 
+    font-size: 2em;
+    color: $color5;
+}
+
+.fail__msg {
+    font-family:'Old Standard TT', serif; 
+    font-size: 2em;
+    text-align: center;
+    color: $color5;
+}
+
+#addtocart__btn {
+    display: block;
+    margin: 2vh auto 2vh auto;
+    background-color: $color3;
+    border-radius: 5px;
+    padding:10px;
+    color: $color5;
+}
+
+#order__btn {
+    display: block;
+    margin: 2vh auto 2vh auto;
+    background-color: $color3;
+    border-radius: 5px;
+    padding:10px;
+    color: $color5;
+}
+
+#validorder__btn {
+    display: block;
+    margin: 2vh auto 2vh auto;
+    background-color: $color3;
+    border-radius: 5px;
+    padding:10px;
+    color: $color5;
+}
+
+
+.card {
+    width:70%;
+    margin:5vh auto 1vh auto;
+    box-sizing: border-box;
+    background-color: $color1;
+    border-top: 2px solid $color3;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive("large") {
+        flex-direction: row;
+    }
+    
+    
+
+    &__pics {
+        margin: 2vh auto 2vh auto;
+        width: 90%;
+        height: auto; 
+        
+        @include responsive("small") {
+            width:75%;
+        }
+        @include responsive("medium") {
+            width:50%;
+        }
+        @include responsive("large") {
+            width:30%;
+        }
+    }
+
+    &__content {
+        height:75%;
+        font-family:'Old Standard TT', serif;
+        font-size: 1em;
+        padding-left: 3vh;
+        padding-right: 3vh;
+        
+        p {
+            margin-bottom: 2vh;
+            color: $color5;
+            @include responsive("small") {
+               font-size: 1.2em;
+            }
+        }
+        h3 {
+            margin: 2vh auto 2vh auto;
+            font-size: 1.5em;
+            color: $color5;
+            @include responsive("small") {
+                font-size: 1.6em
+            }
+        }
+    }
+    &__btn {
+
+        @include border;
+        background-color: $color3;
+        font-family:'Old Standard TT', serif;
+        color: $color5;
+        font-size: 0.8em;
+        text-decoration: none;
+        padding: 0.5em;
+        @include responsive("small") {
+            font-size: 1em
+        }
+    }
+    &__btn:hover {
+
+        background-color: $color5;
+        color: $color1;
+    }
+
+}
+
+#footer {
+
+    width:95vw;
+    height:12vh;
+    line-height: 12vh;
+    margin: auto;
+    background-color: $color1;
+    overflow: hidden;
+    font-family: 'Old Standard TT', serif;
+    border-top: 3px solid $color3;
+    border-left: 3px solid $color3;
+    border-right: 3px solid $color3;
+    border-radius:10px 10px 0 0;
+    
+
+}
+
+.navbot {
+
+    font-family: 'Old Standard TT', serif;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        margin: 0 1em 0 1em;
+        font-size:1.5em;
+        text-decoration:none;
+        color: $color5;
+
+        @include responsive("small") {
+            margin: 0 2em 0 2em;
+        }
+        
+    
+    }
+    
+}
