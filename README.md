@@ -11,74 +11,74 @@ _`Début de formation le 20/04/2020`_
 
 ***
 ## 📎 Projet 6 - Construire une API sécurisée pour l'application d'avis gastronomiques So Pekocko.
-![left 100%](https://github.com/thierry-laval/archives/blob/master/images/logo.orinoco.png?raw=true)
-***
- A ECRIRE
-
- 
-Le sujet du projet 5 du parcours Développeur web chez Openclassrooms porte sur la création d’un site e- commerce pour la partie front-end.<br>
-L'objectif étant de créer un premier MVP pour démontrer le fonctionnement des applications à des investisseurs potentiels.
-
-### Objectifs et Compétences évalué
-
-* Gérer des événements JavaScript
-* Interagir avec un web service avec JavaScript
-* Valider des données issues de sources externes
-* Créer un plan de test pour une application
-
-### Livrables
-
-* 1 -  Le lien vers un dépôt Git public contenant le code de l'application web.
-<br>(Le mentor et l'évaluateur doivent être en mesure de `cloner le référentiel`, `d'ouvrir index.html`, d'utiliser l'application entièrement opérationnelle et de confirmer que n’importe quel input utilisateur est validé.)
-* 2 - Un plan de tests.
-
+![left 100%](Instructions/logo.jpg)
 ***
 
-## 🔨 Installation ##
-
-Les fichiers du back-end du serveur pour le projet sont présents dans ce répo.
-
-Vous aurez besoin d'avoir `Node` et `npm` installés localement sur votre machine.
-
-Clonez ce dépôt: https://github.com/thierry-laval/orinoco
-
-À partir du dossier du projet, exécutez`npm install`.
-Vous pouvez ensuite exécuter le serveur avec`node server`.
-Le serveur doit fonctionner en `localhost` avec le port par défaut `3000`.
-localhost:3000
-
-Si le serveur fonctionne sur un autre port pour une raison quelconque, cela est imprimé sur la console au démarrage du serveur, par exemple`Listening on port 3001`.
-
-Pour pouvoir faire tourner ce site en local, vous devez avoir installé un `serveur http` en `local` comme `http- server`.
-Ligne de commande : `npm install --global http-server`.
-
-### 🔨 En résumé, pour faire fonctionner ce site ###
-
-* Cloner ce repo
-* Ouvrir le terminal sur le dossier du site
-* Tapez en ligne de commande `node server`
-* Ouvrez index.html (page d'accueil)
-
-***
-
-##### Utilisé dans ce projet
+Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur le développement d'une application d’évaluation des sauces piquantes pour la marque "So Pekocko". L'objectif étant de créer un MVP permettant aux utilisateurs d’ajouter leurs sauces préférées et de liker ou disliker les sauces ajoutées par les autres utilisateurs.
 
 * Voir : [Le projet sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/675/assignment "Cliquez pour voir le projet")
 
+#### Contexte du projet
 
-| Languages       | et                    | outils     |
-| :-------------: |:-------------:        | :-----:    |
-| HTML5           | Node.js              | NPM (Node Package Manager) |
-| CSS3            | Git/GitHub                   | xXx |
-| Java-script              | Sass |  Visual Studio Code    |
+* So Pekocko est une entreprise familiale de 10 salariés.
+* Son activité principale est la création de sauces piquantes dont la composition est tenue secrète.
+* Forte de son succès, l’entreprise souhaite se développer et créer une application web, dans laquelle les utilisateurs pourront ajouter leurs sauces préférées et liker ou disliker les sauces proposées par les autres.
+
+#### Objectifs et Compétences évalué
+
+* Implémenter un modèle logique de données conformément à la réglementation
+* Stocker des données de manière sécurisée
+* Mettre en œuvre des opérations CRUD de manière sécurisée
 
 ***
 
-### 🚦Les documents de présentation
+#### Instructions relatives à l'API
 
-→ [Voir le dépot sur Github](https://github.com/thierry-laval/orinoco)\
-→ [Voir le plan de test en ligne](https://)\
-→ [Voir l'organigramme en ligne](https://drive.google.com/file/d/1a8wuXU_-vSKqmll1vVixPPevc7gfndn8/view?usp=sharing)
+* [Note de cadrage](Instructions/Cadrage.pdf)
+* [Guidelines](Instructions/Guidelines.pdf)
+
+#### Contenus de ce repository
+
+* Ce répo contient les deux dossiers `Frontend` et `Backend`.
+Vous pouvez cloner ce repository pour récupérer en local les deux parties Front et Back de l'application.
+
+* Si besoin, vous pouvez trouver le Frontend séparément sur [github](https://github.com/OpenClassrooms-Student-Center/dwj-projet6).
+
+***
+
+### 🔨 Installation
+
+#### Faire tourner le Frontend
+
+* Aprés avoir cloné le projet depuis github, exécuter npm install pour installer les dépendances.
+* Le projet a été généré avec Angular CLI version 7.0.2.
+* Démarrer ng serve (ou npm start) pour avoir accès au serveur de développement.
+* Rendez-vous sur http://localhost:4200/.
+* L'application va se recharger automatiquement si vous modifiez un fichier source.
+
+#### Faire tourner le Backend
+
+* Pour utiliser le serveur, chargez le package nodemon : npm install -g nodemon.
+* Puis lancez le serveur: nodemon server.
+
+***
+
+#### Utilisé dans ce projet
+
+| Technologies             | et outils          |
+| :-------------:          |:-------------:     |
+| Framework: Express       | Visual Studio Code |
+| Serveur: NodeJS          | Git/GitHub         |
+| Base de données: MongoDB | xXx                |
+
+* Toutes les opérations de la base de données doivent utilisent le pack Mongoose avec
+des schémas de données stricts.
+
+***
+
+### 🚦 Livrables
+
+→ [Le lien vers le dépôt Git public contenant le code de l’API.](https://github.com/thierry-laval/so_pekocko)
 
 ***
 <p>&hearts; Love Markdown<p>
