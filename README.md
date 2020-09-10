@@ -50,16 +50,21 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 
 #### Faire tourner le Frontend
 
-* Aprés avoir cloné le projet depuis github, exécuter npm install pour installer les dépendances.
+* Aprés avoir cloné le projet depuis github, exécuter `npm install` pour installer les dépendances.
+* Exécuter `npm install node-sass` pour installer sass.
 * Le projet a été généré avec Angular CLI version 7.0.2.
-* Démarrer ng serve (ou npm start) pour avoir accès au serveur de développement.
-* Rendez-vous sur http://localhost:4200/.
+* Démarrer ng serve (ou `npm start`) pour avoir accès au serveur de développement.
+* Rendez-vous sur `http://localhost:4200/`.
 * L'application va se recharger automatiquement si vous modifiez un fichier source.
 
 #### Faire tourner le Backend
 
-* Pour utiliser le serveur, chargez le package nodemon : npm install -g nodemon.
-* Puis lancez le serveur: nodemon server.
+* Pour utiliser le serveur, chargez le package nodemon : `npm install -g nodemon`.
+* Puis lancez le serveur: `nodemon server`.
+
+###### Connexion
+
+Pous s'inscrire sur l'application, l'utilisateur doit s'inscrire en fournissant un email et un mot de passe contenant 08 caracteres minimum (dont 1 majuscule, 1 minuscule, 1 chiffre, pas de symbole, espaces autorisés).
 
 ***
 
@@ -69,10 +74,9 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 | :-------------:          |:-------------:     |
 | Framework: Express       | Visual Studio Code |
 | Serveur: NodeJS          | Git/GitHub         |
-| Base de données: MongoDB | xXx                |
+| Base de données: MongoDB | Mongoose               |
 
-* Toutes les opérations de la base de données doivent utilisent le pack Mongoose avec
-des schémas de données stricts.
+* Toutes les opérations de la base de données utilisent le pack Mongoose avec des schémas de données stricts.
 
 ***
 

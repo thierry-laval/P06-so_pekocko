@@ -1,3 +1,14 @@
+# Dependency
+node_modules
 
+# Git config
+.git
+
+# IDE config
+.vscode
+
+# OSX
 .DS_Store
-angular-cli
+
+# Cache access process env
+.env
