@@ -16,7 +16,7 @@ _`Début de formation le 20/04/2020`_
 
 Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur le développement d'une application d’évaluation des sauces piquantes pour la marque "So Pekocko". L'objectif étant de créer un MVP permettant aux utilisateurs d’ajouter leurs sauces préférées et de liker ou disliker les sauces ajoutées par les autres utilisateurs.
 
-* Voir : [Le projet sur OpenClassrooms](https://openclassrooms.com/fr/paths/185/projects/675/assignment "Cliquez pour voir le projet")
+* Voir : [Le projet sur OpenClassrooms](https://openclassrooms.com/fr/projects/676/assignment "Cliquez pour voir le projet")
 
 #### Contexte du projet
 
@@ -63,6 +63,11 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 * Ouvrir le terminal sur ce dossier.
 * Pour utiliser le serveur, chargez le package nodemon : `npm install -g nodemon`.
 * Puis lancez le serveur: `nodemon server`.
+
+A REVOIR
+npm install OK (1seule fois)
+npm start OK (démarrage du serveur)
+OU    node server ok
 
 ###### Connexion
 
