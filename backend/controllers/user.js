@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt') // Algorithme bcrypt pour hasher le mot de pass
 const User = require('../models/user'); // Appel à notre modèle 'user'
 const jwt = require('jsonwebtoken'); //Package JsonWebToken permettant d'attribuer un TOKEN à un utilisateur quand il se connecte
 
-
+// Crée un nouvel utilisateur
 //Sauvegarde un nouvel utilisateur et crypte son mot de passe
 exports.signup = (req, res, next) => {
   bcrypt.hash(req.body.password, 10)  //hachage du mot de passe, salage par 10
@@ -13,13 +13,15 @@ exports.signup = (req, res, next) => {
         email: req.body.email,
         password: hash
       });
-      user.save() //Sauvegarde de l'utilisateur
+      user.save() // Enregistre l'utilisateur dans la base de données
         .then(() => res.status(201).json({ message: 'Utilisateur créé !' }))
-        .catch(error => res.status(400).json({ error }));
+        .catch(error => res.status(400).json({ error })); //Il existe déjà un utilisateur avec cette adresse email
     })
     .catch(error => res.status(500).json({ error }));
+    
 };
 
+// Connecte un utilisateur
 //Vérifie si l'utilisateur existe dans la base MongoDB lors du login, si oui il vérifie son mot de passe,
 //s'il est bon il renvoie un TOKEN content l'id de l'utilisateur, sinon il renvoie une erreur
 exports.login = (req, res, next) => {

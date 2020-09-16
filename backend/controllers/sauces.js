@@ -3,11 +3,11 @@
 const Sauce = require('../models/sauce'); // Récupération du modèle 'sauce'
 const fs = require('fs'); // Récupération du module 'file system' de Node permettant de gérer ici les téléchargement d'images
 
-//Permet de créer une sauce
+//Permet de créer une nouvelle sauce
 exports.createSauce = (req, res, next) => {
   //Stocke les données envoyées par le front-end sous forme de form-data dans une variable en les transformant en objet js
   const sauceObject = JSON.parse(req.body.sauce);
-  //Supprime l'id envoyé par le front-end. L'id de la sauce est créé par la base MongoDB lors de la création dans la base
+  //Supprime l'id généré automatiquement et envoyé par le front-end. L'id de la sauce est créé par la base MongoDB lors de la création dans la base
   delete sauceObject._id;
   //Création d'une instance du modèle Sauce
   const sauce = new Sauce({

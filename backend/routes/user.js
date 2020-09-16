@@ -9,7 +9,7 @@ const verifyPassword = require('../middleware/verifyPassword');
 
 // Création des routes Inscription et Connexion de l'API avec les middlewares
 // et controllers d'authentification et de sécurité qui leur sont appliquées
-router.post('/signup', verifyPassword, userCtrl.signup);
-router.post('/login', userCtrl.login);
+router.post('/signup', verifyPassword, userCtrl.signup); // Crée un nouvel utilisateur
+router.post('/login', userCtrl.login); // Connecte un utilisateur
 
 module.exports = router;

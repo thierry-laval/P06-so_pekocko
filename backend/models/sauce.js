@@ -5,6 +5,7 @@ const sauceValidation = require('../middleware/sauceValidation');
 
 // Création d'un schema mangoose pour que les données de la base MongoDB ne puissent
 // pas différer de celui précisé dans le schema
+//Model des sauces
 const sauceSchema = mongoose.Schema({
   userId: { type: String, required: true },
   name: { type: String, required: true, /* validate : sauceValidation.nameValidator */ },

@@ -8,4 +8,4 @@ node_modules
 .DS_Store
 
 # Cache access process env
-.env
+# oui ou non ? .env

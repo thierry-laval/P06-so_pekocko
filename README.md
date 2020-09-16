@@ -8,6 +8,7 @@ _`Début de formation le 20/04/2020`_
 
 * Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
+* Visitez ==> 🏠 [Site Web](https://xXx)
 
 ***
 ## 📎 Projet 6 - Construire une API sécurisée pour l'application d'avis gastronomiques So Pekocko.
@@ -16,7 +17,7 @@ _`Début de formation le 20/04/2020`_
 
 Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur le développement d'une application d’évaluation des sauces piquantes pour la marque "So Pekocko". L'objectif étant de créer un MVP permettant aux utilisateurs d’ajouter leurs sauces préférées et de liker ou disliker les sauces ajoutées par les autres utilisateurs.
 
-* Voir : [Le projet sur OpenClassrooms](https://openclassrooms.com/fr/projects/676/assignment "Cliquez pour voir le projet")
+* 👀  Voir : [Le projet sur OpenClassrooms](https://openclassrooms.com/fr/projects/676/assignment "Cliquez pour voir le projet")
 
 #### Contexte du projet
 
@@ -50,7 +51,7 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 
 * Cloner ce projet depuis GitHub.
 
-#### Faire tourner le Frontend
+#### 💡 Faire tourner le Frontend
 
 * Ouvrir le terminal sur ce dossier et exécuter  `npm install` pour installer les dépendances.
 * Exécuter `npm install node-sass` pour installer sass.
@@ -59,7 +60,7 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 * Rendez-vous sur `http://localhost:4200/`.
 * L'application va se recharger automatiquement si vous modifiez un fichier source.
 
-#### Faire tourner le Backend
+#### 💡 Faire tourner le Backend
 * Ouvrir le terminal sur ce dossier.
 * Pour utiliser le serveur, chargez le package nodemon : `npm install -g nodemon`.
 * Puis lancez le serveur: `nodemon server`.
@@ -69,13 +70,14 @@ npm install OK (1seule fois)
 npm start OK (démarrage du serveur)
 OU    node server ok
 
-###### Connexion
+###### 🖥  Connexion
 
+Ouvrir [localhost:4200/](http://localhost:4200/) dans votre navigateur.<br>
 Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot de passe contenant 08 caractères minimum (dont 1 majuscule, 1 minuscule, 1 chiffre, pas de symbole, espaces autorisés).
 
 ***
 
-#### Utilisé dans ce projet
+#### 📦  Utilisé dans ce projet
 
 | Technologies             | et outils          |
 | :-------------:          |:-------------:     |
@@ -92,4 +94,22 @@ Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot
 → [Le lien vers le dépôt Git public contenant le code de l’API.](https://github.com/thierry-laval/so_pekocko)
 
 ***
+
+### 📝 License
+
+Copyright © 2020 [Thierry Laval](https://github.com/thierry-laval).
+
+Ce projet est sous licence [MIT](/backend/LICENCE).
+
+[Voir mon travail]: <InsertUrl>
+
+[Template]: <InsertUrl>
+
+[Git project]: https://github.com/thierry-laval/so_pekocko
+
+***
+
+
+Donnez une ⭐️ si ce projet vous a plu !
+
 <p>&hearts; Love Markdown<p>
