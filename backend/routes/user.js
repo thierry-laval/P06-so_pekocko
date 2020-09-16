@@ -1,3 +1,4 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
 // Contient les fonctions qui s'appliquent aux différentes routes pour les utilisateurs
 
 const express = require('express');

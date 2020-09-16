@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 // LOGIQUE METIER SAUCES A APPLIQUER AUX DIFFERENTES ROUTES CRUD
 
 const Sauce = require('../models/sauce'); // Récupération du modèle 'sauce'

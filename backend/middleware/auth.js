@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 const jwt = require('jsonwebtoken');
 
 // Middleware qui vérifie le TOKEN de l'utilisateur, s'il correspond à l'id de l'utilisateur dans la requête,

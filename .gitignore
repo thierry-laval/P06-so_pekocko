@@ -7,5 +7,4 @@ node_modules
 # OSX
 .DS_Store
 
-# Cache access process env
-# oui ou non ? .env
+

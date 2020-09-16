@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 const mongoose = require('mongoose');
 const sanitizerPlugin = require('mongoose-sanitizer-plugin');
 // Appel le middleware de validation des champs du model de la sauce

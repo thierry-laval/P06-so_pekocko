@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 const mongoose = require('mongoose');
 require('mongoose-type-email');
 const uniqueValidator = require('mongoose-unique-validator');

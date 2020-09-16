@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 //LOGIQUE METIER UTILISATEURS APPLIQUE AUX ROUTES POST POUR LES OPERATIONS D'INSCRIPTION ET DE CONNEXION
 
 const bcrypt = require('bcrypt') // Algorithme bcrypt pour hasher le mot de passe

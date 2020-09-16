@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 const passwordValidator = require('password-validator');
 
 // Schéma de mot de passe plus sécure

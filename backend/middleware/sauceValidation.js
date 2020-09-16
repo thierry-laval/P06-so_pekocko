@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 const validate = require('mongoose-validator'); // Appel du plugin mongoose-validator
 
 exports.nameValidator = [  // Validation du champ 'nom de la sauce'

@@ -1,3 +1,5 @@
+// Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
+
 const multer = require('multer');
 
 // Crée un dictionnaire des types MIME
