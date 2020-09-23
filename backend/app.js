@@ -14,7 +14,10 @@ const mongoose = require('mongoose'); // Plugin Mongoose pour se connecter à la
 // On donne accès au chemin de notre système de fichier
 const path = require('path'); // Plugin qui sert dans l'upload des images et permet de travailler avec les répertoires et chemin de fichier
 
-// utilisation du module 'helmet' pour la sécurité en protégeant l'application de certaines vulnérabilités, il sécurise nos requêtes HTTP, sécurise les en-têtes, contrôle la prélecture DNS du navigateur, empêche le détournement de clics, et ajoute une protection XSS mineure et protège contre le reniflement de TYPE MIME
+// utilisation du module 'helmet' pour la sécurité en protégeant l'application de certaines vulnérabilités
+// il sécurise nos requêtes HTTP, sécurise les en-têtes, contrôle la prélecture DNS du navigateur, empêche le détournement de clics
+// et ajoute une protection XSS mineure et protège contre le reniflement de TYPE MIME
+
 const helmet = require('helmet')
 const session = require('cookie-session');
 const nocache = require('nocache');
@@ -29,7 +32,8 @@ const userRoutes = require('./routes/user');
 require('dotenv').config();
 
 // Connection à la base de données MongoDB avec la sécurité vers le fichier .env pour cacher le mot de passe
-// L'un des avantages que nous avons à utiliser Mongoose pour gérer notre base de données MongoDB est que nous pouvons implémenter des schémas de données stricts, qui permettent de rendre notre application plus robuste
+// L'un des avantages que nous avons à utiliser Mongoose pour gérer notre base de données MongoDB est que nous pouvons implémenter des schémas de données stricts
+// qui permettent de rendre notre application plus robuste
 mongoose.connect(process.env.DB_URI, {
     useCreateIndex: true,
     useNewUrlParser: true,
@@ -74,8 +78,10 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// On utilise une méthode body-parser transformation du corps de la requête en JSON, en objet JS utilisable
-// Sachant que l'on va créer une requête post pour permettre à l'utilisateur de mettre en ligne une sauce sur la base d'un schéma créer dans Sauce.js il va falloir traiter les données associées à cette requête, autrement dit d'extraire l'objet JSON de la demande en provenance du frontend : on aura recours à body-parser. Il faut qu'elle soit soit formatée pour être utilisée
+// On utilise une méthode body-parser pour la transformation du corps de la requête en JSON, en objet JS utilisable
+// Sachant que l'on va créer une requête post pour permettre à l'utilisateur de mettre en ligne une sauce sur la base d'un schéma créer dans Sauce.js
+// il va falloir traiter les données associées à cette requête, autrement dit d'extraire l'objet JSON de la demande en provenance du frontend : on aura recours à body-parser.
+// Il faut qu'elle soit soit formatée pour être utilisée
 
 // Transforme les données arrivant de la requête POST en un objet JSON facilement exploitable
 app.use(bodyParser.json());

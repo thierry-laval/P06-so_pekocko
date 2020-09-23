@@ -57,7 +57,7 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 * Exécuter `npm install node-sass` pour installer sass.
 * Le projet a été généré avec Angular CLI version 7.0.2.
 * Démarrer ng serve (ou `npm start`) pour avoir accès au serveur de développement.
-* Rendez-vous sur `http://localhost:4200/`.
+* Rendez-vous sur `http://localhost:4200`.
 * L'application va se recharger automatiquement si vous modifiez un fichier source.
 
 #### 💡 Faire tourner le Backend
@@ -65,10 +65,11 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 * Pour utiliser le serveur, chargez le package nodemon : `npm install -g nodemon`.
 * Puis lancez le serveur: `nodemon server`.
 
-A REVOIR
-npm install OK (1seule fois)
-npm start OK (démarrage du serveur)
-OU    node server ok
+#### Pour faire court
+Si les packages sont déja installés, ces commandes suffisent à démarrer les serveurs.
+
+` npm start ` via le terminal sur le frontend
+` nodemon server ` via le terminal sur le backend
 
 ###### 🖥  Connexion
 

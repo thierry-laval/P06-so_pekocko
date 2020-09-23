@@ -41,7 +41,8 @@ exports.signup = (req, res, next) => {
 
 };
 
-// Le Middleware pour la connexion d'un utilisateur vérifie si l'utilisateur existe dans la base MongoDB lors du login, si oui il vérifie son mot de passe, s'il est bon il renvoie un TOKEN contenant l'id de l'utilisateur, sinon il renvoie une erreur
+// Le Middleware pour la connexion d'un utilisateur vérifie si l'utilisateur existe dans la base MongoDB lors du login
+//si oui il vérifie son mot de passe, s'il est bon il renvoie un TOKEN contenant l'id de l'utilisateur, sinon il renvoie une erreur
 exports.login = (req, res, next) => {
   // On doit trouver l'utilisateur dans la BDD qui correspond à l'adresse entrée par l'utilisateur
   User.findOne({
@@ -66,7 +67,8 @@ exports.login = (req, res, next) => {
           // Si true, on renvoie un statut 200 et un objet JSON avec un userID + un token
           res.status(200).json({ // Le serveur backend renvoie un token au frontend
             userId: user._id,
-            // Permet de vérifier si la requête est authentifiée, on va pouvoir obtenir un token encodé pour cette authentification grâce à jsonwebtoken, on va créer des tokens et les vérifier
+            // Permet de vérifier si la requête est authentifiée
+            // on va pouvoir obtenir un token encodé pour cette authentification grâce à jsonwebtoken, on va créer des tokens et les vérifier
             token: jwt.sign( // Encode un nouveau token avec une chaine de développement temporaire
               {
                 userId: user._id
@@ -77,7 +79,8 @@ exports.login = (req, res, next) => {
                 expiresIn: '24h'
               }
             )
-            // On encode le userID pour la création de nouveaux objets, et cela permet d'appliquer le bon userID aux objets et ne pas modifier les objets des autres
+            // On encode le userID pour la création de nouveaux objets, et cela permet d'appliquer le bon userID 
+            // aux objets et ne pas modifier les objets des autres
           });
         })
         .catch(error => res.status(500).json({

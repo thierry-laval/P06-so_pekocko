@@ -39,4 +39,7 @@ userSchema.plugin(sanitizerPlugin);
 // On exporte ce schéma sous forme de modèle : le modèle s'appellera user et on lui passe le shéma de données
 module.exports = mongoose.model('User', userSchema);
 
-// Pour s'assurer que deux utilisateurs ne peuvent pas utiliser la même adresse e-mail, nous utiliserons le mot clé unique pour l'attribut email du schéma d'utilisateur userSchema. Les erreurs générées par défaut par MongoDB pouvant être difficiles à résoudre, nous installerons un package de validation pour pré-valider les informations avant de les enregistrer : npm install --save mongoose-unique-validator
+// Pour s'assurer que deux utilisateurs ne peuvent pas utiliser la même adresse e-mail
+// nous utiliserons le mot clé unique pour l'attribut email du schéma d'utilisateur userSchema.
+// Les erreurs générées par défaut par MongoDB pouvant être difficiles à résoudre, nous installerons un package de validation
+//pour pré-valider les informations avant de les enregistrer : npm install --save mongoose-unique-validator

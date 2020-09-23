@@ -18,7 +18,9 @@ const multer = require('../middleware/multer-config');
 // On associe les fonctions aux différentes routes, on importe le controller
 const saucesCtrl = require('../controllers/sauces');
 
-// En exportant dans le controller la logique métier, les fonctions, on voit plus clairement quelles sont les routes dont on dispose et on utilisera une sémantique très claire pour comprendre ce qu'elles permettent. On a quelque chose de plus modulaire plus facile à comprendre et plus facile à maintenir
+// En exportant dans le controller la logique métier, les fonctions, on voit plus clairement quelles sont les routes dont on dispose
+// et on utilisera une sémantique très claire pour comprendre ce qu'elles permettent.
+// On a quelque chose de plus modulaire plus facile à comprendre et plus facile à maintenir
 
 // Création des différentes ROUTES de l'API en leurs précisant, dans l'ordre, leurs middlewares et controllers
 
