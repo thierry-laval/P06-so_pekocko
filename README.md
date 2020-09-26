@@ -26,11 +26,14 @@ Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur 
 * Forte de son succès, l’entreprise souhaite se développer et créer une application web, dans laquelle les utilisateurs pourront ajouter leurs sauces préférées et liker ou disliker les sauces proposées par les autres.
 
 #### Objectifs et Compétences évaluées
+##### Le but est de créer le backend de l'application, le frontend étant déjà codé et fourni.
 
 * Implémenter un modèle logique de données conformément à la réglementation
 * Stocker des données de manière sécurisée
 * Mettre en œuvre des opérations CRUD de manière sécurisée
 
+##### API REST
+- Sécurité **OWASP** et **RGPD**
 ***
 
 #### Instructions relatives à l'API
@@ -84,8 +87,10 @@ Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot
 | :-------------:          |:-------------:     |
 | Framework: Express       | Visual Studio Code |
 | Serveur: NodeJS          | Git/GitHub         |
-| Base de données: MongoDB | Mongoose               |
+| Base de données: MongoDB | Mongoose           |
 
+* Développement Backend en Javascript
+- Hébergement sur MongoDB Atlas
 * Toutes les opérations de la base de données utilisent le pack Mongoose avec des schémas de données stricts.
 
 ***
