@@ -83,7 +83,7 @@ Si les packages sont déja installés, ces commandes suffisent à démarrer les 
 
 ##### 🖥 &nbsp; Connexion
 
-Ouvrir [localhost:4200/](http://localhost:4200/) dans votre navigateur.  
+Ouvrir [localhost:4200](http://localhost:4200/) dans votre navigateur.  
 Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot de passe contenant 08 caractères minimum (dont 1 majuscule, 1 minuscule, 1 chiffre, pas de symbole, espaces autorisés).
 
 ***
@@ -95,8 +95,8 @@ Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot
 | Framework: Express       | Visual Studio Code |
 | Serveur: NodeJS          | Git/GitHub         |
 | Base de données: MongoDB | Mongoose           |
+| Javascript               |                    | 
 
-* Développement Backend en Javascript
 * Hébergement sur MongoDB Atlas
 * Toutes les opérations de la base de données utilisent le pack Mongoose avec des schémas de données stricts.
 
@@ -105,6 +105,8 @@ Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot
 ### 🚦 &nbsp; Livrables
 
 → [Le lien vers le dépôt Git public contenant le code de l’API.](https://github.com/thierry-laval/so_pekocko)
+
+→ [Le lien vers le fichier pdf donné en tant que livrable.](https://drive.google.com/file/d/1XXAiwnn27O38xPH-HlFFoFYgR69VlH0f/view?usp=sharing)
 
 ***
 
