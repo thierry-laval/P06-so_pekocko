@@ -29,7 +29,7 @@ Le sujet du projet 6 du parcours Développeur web chez Openclassrooms porte sur 
 
 #### Objectifs et Compétences évaluées
 
-##### Le but est de créer le backend de l'application, le frontend étant déjà codé et fourni
+***Le but est de créer le backend de l'application, le frontend étant déjà codé et fourni***
 
 * Implémenter un modèle logique de données conformément à la réglementation
 * Stocker des données de manière sécurisée
