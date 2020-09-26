@@ -83,8 +83,8 @@ Si les packages sont déja installés, ces commandes suffisent à démarrer les 
 
 ##### 🖥 &nbsp; Connexion
 
-Ouvrir [localhost:4200](http://localhost:4200/) dans votre navigateur.  
-Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot de passe contenant 08 caractères minimum (dont 1 majuscule, 1 minuscule, 1 chiffre, pas de symbole, espaces autorisés).
+* Ouvrir [localhost:4200](http://localhost:4200/) dans votre navigateur.  
+* Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot de passe contenant 08 caractères minimum (dont 1 majuscule, 1 minuscule, 1 chiffre, pas de symbole, espaces autorisés).
 
 ***
 
