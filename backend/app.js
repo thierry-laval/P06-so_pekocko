@@ -97,7 +97,7 @@ app.use(nocache());
 // Midleware qui permet de charger les fichiers qui sont dans le repertoire images
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// DRoutes pour la gestion de toute les ressources de l'API attendues - Routage
+// Routes pour la gestion de toute les ressources de l'API attendues - Routage
 // Middleware qui va transmettre les requêtes vers ces url vers les routes correspondantes
 
 // Va servir les routes dédiées aux sauces
