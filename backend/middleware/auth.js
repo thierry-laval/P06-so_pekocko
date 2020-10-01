@@ -21,7 +21,7 @@ module.exports = (req, res, next) => {
     } else {
       next(); // si tout est valide on passe au prochain middleware
     }
-  } catch (error) { // probleme d'autentification
+  } catch (error) { // probleme d'autentification si erreur dans les inscrutions
     res.status(401).json({
       error: error | 'Requête non authentifiée !'
     })

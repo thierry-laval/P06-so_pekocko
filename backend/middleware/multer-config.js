@@ -1,9 +1,10 @@
 // Formation OpenClassrooms - Développeur Web - Projet 6 - Thierry Laval
 
-// On importe multer
+// On importe multer qui est un package qui permet de gérer les fichiers entrants dans les requêtes HTTP
 const multer = require('multer');
 
 // On crée un dictionnaire des types MIME pour définire le format des images
+// Donc la creation d'un objet pour ajouter une extention en fonction du type mime du ficher
 const MIME_TYPES = {
   'image/jpg': 'jpg',
   'image/jpeg': 'jpg',

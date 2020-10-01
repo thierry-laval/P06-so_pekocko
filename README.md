@@ -78,12 +78,12 @@ Vous pouvez cloner ce repository pour récupérer en local les deux parties Fron
 
 Si les packages sont déja installés, ces commandes suffisent à démarrer les serveurs.
 
-* ` npm start ` via le terminal sur le frontend
-* ` nodemon server ` via le terminal sur le backend
+* `npm start` via le terminal sur le frontend
+* `nodemon server` via le terminal sur le backend
 
 ##### 🖥 &nbsp; Connexion
 
-* Ouvrir [localhost:4200](http://localhost:4200/) dans votre navigateur.  
+* Ouvrir [localhost:4200](http://localhost:4200/) dans votre navigateur.
 * Pour s'inscrire sur l'application, l'utilisateur doit fournir un email et un mot de passe contenant 08 caractères minimum (dont 1 majuscule, 1 minuscule, 1 chiffre, pas de symbole, espaces autorisés).
 
 ***

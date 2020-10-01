@@ -168,7 +168,7 @@ exports.likeDislike = (req, res, next) => {
         }, // On incrémente de 1
       })
       .then(() => res.status(200).json({
-        message: 'Like ajouté !'
+        message: 'j\'aime ajouté !'
       }))
       .catch((error) => res.status(400).json({
         error

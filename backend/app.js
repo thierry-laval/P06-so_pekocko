@@ -2,7 +2,7 @@
 
 // App.js fait appel aux différentes fonctions implémentées dans l'APi : Accès aux images, aux route User, aux route Sauce
 
-// import des modules npm
+// import des modules npm - Ajout des plugins externes
 const express = require('express'); // Importation d'express => Framework basé sur node.js
 
 // Pour gérer la demande POST provenant de l'application front-end, nous devrons être capables d'extraire l'objet JSON de la demande, on importe donc body-parser
@@ -17,14 +17,14 @@ const path = require('path'); // Plugin qui sert dans l'upload des images et per
 // utilisation du module 'helmet' pour la sécurité en protégeant l'application de certaines vulnérabilités
 // il sécurise nos requêtes HTTP, sécurise les en-têtes, contrôle la prélecture DNS du navigateur, empêche le détournement de clics
 // et ajoute une protection XSS mineure et protège contre le reniflement de TYPE MIME
-
+// cross-site scripting, sniffing et clickjacking
 const helmet = require('helmet')
 const session = require('cookie-session');
 const nocache = require('nocache');
 
+// Déclaration des routes
 // On importe la route dédiée aux sauces
 const saucesRoutes = require('./routes/sauces');
-
 // On importe la route dédiée aux utilisateurs
 const userRoutes = require('./routes/user');
 
@@ -97,7 +97,7 @@ app.use(nocache());
 // Midleware qui permet de charger les fichiers qui sont dans le repertoire images
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// Routes pour la gestion de toute les ressources de l'API attendues - Routage
+// DRoutes pour la gestion de toute les ressources de l'API attendues - Routage
 // Middleware qui va transmettre les requêtes vers ces url vers les routes correspondantes
 
 // Va servir les routes dédiées aux sauces
@@ -106,5 +106,5 @@ app.use('/api/sauces', saucesRoutes);
 // Va servir les routes dédiées aux utilisateurs
 app.use('/api/auth', userRoutes);
 
-// Export de l'application express
+// Export de l'application express pour déclaration dans server.js
 module.exports = app;
