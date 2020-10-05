@@ -18,7 +18,7 @@ const path = require('path'); // Plugin qui sert dans l'upload des images et per
 // il sécurise nos requêtes HTTP, sécurise les en-têtes, contrôle la prélecture DNS du navigateur, empêche le détournement de clics
 // et ajoute une protection XSS mineure et protège contre le reniflement de TYPE MIME
 // cross-site scripting, sniffing et clickjacking
-const helmet = require('helmet')
+const helmet = require('helmet');
 const session = require('cookie-session');
 const nocache = require('nocache');
 
