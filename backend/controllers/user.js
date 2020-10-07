@@ -79,7 +79,7 @@ exports.login = (req, res, next) => {
                 expiresIn: '24h'
               }
             )
-            // On encode le userID pour la création de nouveaux objets, et cela permet d'appliquer le bon userID 
+            // On encode le userID pour la création de nouveaux objets, et cela permet d'appliquer le bon userID
             // aux objets et ne pas modifier les objets des autres
           });
         })
