@@ -80,6 +80,7 @@ Si les packages sont déja installés, ces commandes suffisent à démarrer les 
 
 * `npm start` via le terminal sur le frontend
 * `nodemon server` via le terminal sur le backend
+* Se connecter à l'url : `http://localhost:4200`
 
 ##### 🖥 &nbsp; Connexion
 
