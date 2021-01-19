@@ -103,7 +103,7 @@ Si les packages sont déja installés, ces commandes suffisent à démarrer les 
 
 ***
 
-### 🚦 &nbsp; Livrables
+### 🚦 &nbsp; Les documents de présentation et livrables
 
 → [Le lien vers le dépôt Git public contenant le code de l’API.](https://github.com/thierry-laval/so_pekocko)
 
