@@ -8,7 +8,7 @@ _`Début de formation le 20/04/2020`_
 
 * Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
-* Visitez ==> 🏠 [Site Web](https://xXx)
+* Visitez ==> 🏠 [Site Web](https://thierrylaval.dev)
 
 ***
 
