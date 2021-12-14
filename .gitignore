@@ -1,10 +1,8 @@
 # Dependency
-node_modules
+# node_modules
 
 # IDE config
 .vscode
 
 # OSX
 .DS_Store
-
-
