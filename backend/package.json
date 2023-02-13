@@ -19,7 +19,7 @@
     "fs": "^0.0.2",
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.13",
+    "mongoose": "^6.4.6",
     "mongoose-sanitizer-plugin": "^1.1.0",
     "mongoose-type-email": "^1.1.2",
     "mongoose-unique-validator": "^3.0.0",
